@@ -21,8 +21,9 @@ My goals for this project:
 1. Write the backend targeting Python 3.5.3 and run it with PyPy. Be as performant on a server with 10,000 users as it is with 10. (It was either this or Go, and I really needed to unrust my Python.)
 1. Re-write the frontend a bit, but keep React. Frontend will be served via Flask.
 1. Use Argon2 password hashing and force TLS 1.2 *or, even better* TLS v1.3 for transportation methods between hosted servers.
-1. Try to improve user discovery methods and federation, while trying to verify users on other hosted servers.
+1. Try to improve user discovery methods and federation, while trying to keep in mind security issues. (Not that I'm saying there's any in Mastodon right now, but making sure the server isn't sending malicious stuff is the first step.)
 1. Support U2F (Yubikey, etc.) authentication.
+1. Anti-spam techniques.
 1. Use DNSCrypt, though this will be off by default and optional.
 1. Add in [glitch-soc specific](https://glitch-soc.github.io/docs/) features while adding more often-requested features.
 1. Use Docker as it will make deployment and upgrading a lot easier.
